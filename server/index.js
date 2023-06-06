@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const authRouter = require('./routes/auth');
+const postRouter = require('./routes/post');
 
 const connectDB = async () => {
 	try {
@@ -26,6 +27,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => res.send('Hello world!'));
 app.use('/api/auth', authRouter);
+app.use('/api/post', postRouter);
 
 const PORT = 5000;
 
