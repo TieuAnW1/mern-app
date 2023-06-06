@@ -20,9 +20,10 @@ Content-Type: application/json
 
 POST  http://localhost:5000/api/post/create
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDdjYmNjMDk5NmMyYzU3YjhiY2ZlNDAiLCJpYXQiOjE2ODYwMzgyNzF9.2Ke37VzBXm3-AozMq__3Z-T8z2EHVlK4wVszZO3TyhY
 
 {
-    "title" : "title 1",
+    "title" : "title 2",
     "description": "123123",
     "url": "",
     "status": "LEARNING",

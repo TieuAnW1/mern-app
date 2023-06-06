@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const verifyToken = require('../middleware/auth');
 
 const Post = require('../models/post');
 
-router.post('/create', async (req, res) => {
+router.post('/create', verifyToken, async (req, res) => {
 	const { title, description, url, status } = req.body;
 	if (!title)
 		res.status(400).json({
