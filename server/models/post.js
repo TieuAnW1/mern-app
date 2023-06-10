@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-const postSchema = new schema({
+const postSchema = new Schema({
 	title: {
 		type: String,
 		require: true,
@@ -17,7 +17,7 @@ const postSchema = new schema({
 		enum: ['TO LEARN', 'LEARNING', 'LEARNED'],
 	},
 	user: {
-		type: schema.Types.ObjectId,
+		type: Schema.Types.ObjectId,
 		ref: 'users',
 	},
 	createdAt: {

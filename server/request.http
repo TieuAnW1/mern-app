@@ -20,18 +20,30 @@ Content-Type: application/json
 
 POST  http://localhost:5000/api/post/create
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDdjYmNjMDk5NmMyYzU3YjhiY2ZlNDAiLCJpYXQiOjE2ODYwMzgyNzF9.2Ke37VzBXm3-AozMq__3Z-T8z2EHVlK4wVszZO3TyhY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDdjYmMzZDAxYTg1ZTkxNDE2OGViOWYiLCJpYXQiOjE2ODYzOTQzNjl9.QJXV_Bx8B_vBnjXNjVWxYpQrqoTqZ7gL3IAUKQ9QZQM
 
 {
-    "title" : "title 2",
+    "title" : "title 2 of son2",
     "description": "123123",
     "url": "",
-    "status": "LEARNING",
-    "user": "647cbcc0996c2c57b8bcfe40"
+    "status": "LEARNING"
 }
 
 ###
 
 GET http://localhost:5000/api/post/get-posts
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDdjYmMzZDAxYTg1ZTkxNDE2OGViOWYiLCJpYXQiOjE2ODYyOTMwMjB9.6GKsb34cBXLLoBfucF-6MBMB1bfq2EjlpdhfsDqR2-Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDdjYmMzZDAxYTg1ZTkxNDE2OGViOWYiLCJpYXQiOjE2ODYzOTM2NDh9.igObq3DGykSQaxd05YP6h0_fMKAKALoD0QOkM9ijXMA
+
+###
+
+PUT http://localhost:5000/api/post/6484573a2631fa2553a0186c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDdjYmMzZDAxYTg1ZTkxNDE2OGViOWYiLCJpYXQiOjE2ODYzOTQzNjl9.QJXV_Bx8B_vBnjXNjVWxYpQrqoTqZ7gL3IAUKQ9QZQM
+
+{
+    "title" : "title 2 update 2",
+    "description": "123123",
+    "url": "",
+    "status": "LEARNING"
+}
